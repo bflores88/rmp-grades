@@ -117,13 +117,13 @@ var allScores = (function(){
 }())
 
 
-console.log(allScores.sum());
-console.log(allScores.average());
-console.log(allScores.highest());
-console.log(allScores.lowest());
-console.log(allScores.random());
-console.log(allScores.over70());
-console.log(allScores.first());
-console.log(allScores.last());
-console.log(allScores.increase());
-console.log(allScores.odd());
+console.log('Sum: ' + allScores.sum());
+console.log('Average: ' + allScores.average());
+console.log('Highest: ' + allScores.highest());
+console.log('Lowest: ' + allScores.lowest());
+console.log('Random: ' + allScores.random());
+console.log('Over 70: ' + allScores.over70());
+console.log('First: ' + allScores.first());
+console.log('Last: ' + allScores.last());
+console.log('Increase by 5%: ' + allScores.increase());
+console.log('Odd Number Scores: ' + allScores.odd());
