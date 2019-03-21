@@ -20,7 +20,6 @@ var allScores = (function(){
 
     var sumScores = 0;
     var avgScores = 0;
-    var highestScore = 0;
 
     var sum = function(){
         for(var i=0; i<scores.length; i++){
@@ -35,22 +34,12 @@ var allScores = (function(){
     }
 
     var highest = function(){
-        scores.forEach(function(elem){
-            if(elem > highestScore){
-                highestScore = elem;
-            }
-        })
+        var highestScore = Math.max(...scores);
         return highestScore;
     }
 
-    var lowestScore = 100;
-
     var lowest = function(){
-        scores.forEach(function(elem){
-            if(elem < lowestScore){
-                lowestScore = elem;
-            }
-        })
+        var lowestScore = Math.min(...scores);
         return lowestScore;
     }
 
