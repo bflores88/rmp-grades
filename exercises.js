@@ -59,6 +59,17 @@ var allScores = (function(){
         return randomScore;
     }
 
+    var over70 = function(){
+        var above70 = [];
+        scores.forEach(function(elem){
+            if(elem>70){
+                above70.push(elem);
+            }
+        })
+        return above70;
+
+    }
+
     var first = function(){
         var firstScore = scores[0];
         return firstScore;
@@ -94,6 +105,7 @@ var allScores = (function(){
         highest: highest,
         lowest: lowest,
         random: random,
+        over70: over70,
         first: first,
         last: last,
         increase: increaseBy5,
@@ -110,6 +122,7 @@ console.log(allScores.average());
 console.log(allScores.highest());
 console.log(allScores.lowest());
 console.log(allScores.random());
+console.log(allScores.over70());
 console.log(allScores.first());
 console.log(allScores.last());
 console.log(allScores.increase());
